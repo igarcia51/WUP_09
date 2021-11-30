@@ -14,6 +14,10 @@ require(tigerstats)
 require(tidyverse)
 ```
 
+```{r}
+fish=read.csv("Fish.csv")
+```
+
 # Introduction
 
 <!--In this section you explain what you are trying to show.  Where did the data come from?  What is the research or other question you are trying to answer?!-->
@@ -21,10 +25,19 @@ require(tidyverse)
 ## Build the best regression model you can that predicts the weight of perch
 ## Using only two predictor variables  
 
+We are trying to find the best two variables to predict the weight of each type of fish. 
+
+##Perch
 
 # Methods
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
+
+Obtain subset of fish with the species we want to analyze, then we will look at how well each combination of the predictor variables can predict the weight of the fish. We are using the perch subset in this analysis. 
+
+```{r}
+Perch =filter(fish,Species=="Perch")
+```
 
 #Results
 
@@ -39,6 +52,17 @@ require(tidyverse)
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+```{r}
+basicNN <- ggplot(Perch,aes(y=Weight,x=Length1))
+```
+
+##Now asdd in scatterplot
+
+```{r}
+basicNN + geom_point()
+```
+
 
 ## Inferential Results
 
