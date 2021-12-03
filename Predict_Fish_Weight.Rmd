@@ -313,6 +313,8 @@ anova(fullup,best.model)
 
 This analysis of Variance table basically shows that model 1 is slightly better because it has a smaller Residual sum of squares.
 
+
+
 # Discussion and Conclusion
 
 
