@@ -315,6 +315,7 @@ This analysis of Variance table basically shows that model 1 is slightly better 
 
 # Discussion and Conclusion
 
+
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
 
 We fail to reject the Null hypothesis because the P value is high at 0.879. We conclude that Length3 and Length1 are the two best variables when predicting weight of a Pike if using just two variables.
